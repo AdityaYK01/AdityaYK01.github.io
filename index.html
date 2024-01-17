@@ -3,59 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Special Message</title>
+    <title>Love Message</title>
     <style>
         body {
-            background-color: #f0f0f0;
-            font-family: Arial, sans-serif;
+            background-color: #000; /* Latar belakang hitam */
+            color: #fff; /* Warna teks putih */
+            font-family: 'Arial', sans-serif;
             text-align: center;
-            margin: 0;
-            padding: 0;
             display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
             height: 100vh;
-        }
-
-        h1 {
-            color: #FF4500; /* Warna OrangeRed */
-        }
-
-        p {
-            font-size: 18px;
-            color: #333;
-            max-width: 600px;
-            margin: 20px 0;
-        }
-
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #008080; /* Warna Teal */
-            color: #fff;
-            text-decoration: none;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .button:hover {
-            background-color: #006666; /* Warna Dark Teal saat hover */
+            margin: 0;
         }
     </style>
 </head>
 <body>
 
-    <h1>I LOVE U</h1>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var loveMessage = "I LOVE U RIMA";
+            var loveMessageContainer = document.createElement('div');
+            loveMessageContainer.style.fontSize = '36px';
+            loveMessageContainer.style.display = 'inline-block';
+            document.body.appendChild(loveMessageContainer);
 
-    <p>
-        Dimulai hari ini, kamu adalah milikku. Senang banget si Adit, tapi kita tetap harus kelihatan misterius kata bapak-nya Marsidi, dan aku harap kedepannya kamu akan nyaman denganku, OK?!
-    </p>
-
-    <a href="https://link-video-anda.com" class="button">Tonton Video</a>
+            for (var i = 0; i < loveMessage.length; i++) {
+                (function(i) {
+                    setTimeout(function() {
+                        loveMessageContainer.textContent += loveMessage[i];
+                    }, i * 500);
+                })(i);
+            }
+        });
+    </script>
 
 </body>
 </html>
