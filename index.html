@@ -15,7 +15,27 @@
             position: absolute;
             width: 50px;
             height: 100px;
-            background-color: #000;
+            background-color: #FFD700; /* Warna kuning untuk kepala */
+            border-radius: 50%; /* Membuat kepala bulat */
+        }
+
+        .stickman::before,
+        .stickman::after {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 40px;
+            background-color: #FFD700; /* Warna kuning untuk tubuh dan kaki */
+        }
+
+        .stickman::before {
+            top: -40px;
+            left: 20px;
+        }
+
+        .stickman::after {
+            top: 0;
+            left: 20px;
         }
 
         #boy {
@@ -49,7 +69,7 @@
     <div class="stickman" id="girl"></div>
 
     <h1>Love u Rim!</h1>
-    <p>Tp!</p>
+    <p>Terima kasih telah mengunjungi situs ini. Semoga hari ulang tahun Anda penuh kebahagiaan!</p>
     <img src="ewewweweewqeq.jpg" alt="Ucapan Selamat Ulang Tahun">
 
     <script>
