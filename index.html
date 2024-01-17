@@ -3,92 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ucapan Selamat Ulang Tahun</title>
+    <title>Special Message</title>
     <style>
         body {
-            background-color: #87CEEB; /* Warna latar belakang */
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            text-align: center;
             margin: 0;
-            overflow: hidden;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
         }
 
-        .stickman {
-            position: absolute;
-            width: 50px;
-            height: 100px;
-            background-color: #FFD700; /* Warna kuning untuk kepala */
-            border-radius: 50%; /* Membuat kepala bulat */
+        h1 {
+            color: #FF4500; /* Warna OrangeRed */
         }
 
-        .stickman::before,
-        .stickman::after {
-            content: '';
-            position: absolute;
-            width: 10px;
-            height: 40px;
-            background-color: #FFD700; /* Warna kuning untuk tubuh dan kaki */
+        p {
+            font-size: 18px;
+            color: #333;
+            max-width: 600px;
+            margin: 20px 0;
         }
 
-        .stickman::before {
-            top: -40px;
-            left: 20px;
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #008080; /* Warna Teal */
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
         }
 
-        .stickman::after {
-            top: 0;
-            left: 20px;
-        }
-
-        #boy {
-            left: 50px;
-            animation: chaseBoy 5s linear infinite;
-        }
-
-        #girl {
-            right: 50px;
-            animation: runAway 5s linear infinite;
-            transform: scaleX(-1); /* Memutar stickman perempuan */
-        }
-
-        @keyframes chaseBoy {
-            0%, 100% { top: 0; }
-            50% { top: 200px; }
-        }
-
-        @keyframes runAway {
-            0%, 100% { top: 0; }
-            50% { top: 200px; }
+        .button:hover {
+            background-color: #006666; /* Warna Dark Teal saat hover */
         }
     </style>
 </head>
 <body>
 
-    <!-- Stickman Cowo -->
-    <div class="stickman" id="boy"></div>
+    <h1>I LOVE U</h1>
 
-    <!-- Stickman Cewe -->
-    <div class="stickman" id="girl"></div>
+    <p>
+        Dimulai hari ini, kamu adalah milikku. Senang banget si Adit, tapi kita tetap harus kelihatan misterius kata bapak-nya Marsidi, dan aku harap kedepannya kamu akan nyaman denganku, OK?!
+    </p>
 
-    <h1>Love u Rim!</h1>
-    <p>Terima kasih telah mengunjungi situs ini. Semoga hari ulang tahun Anda penuh kebahagiaan!</p>
-    <img src="ewewweweewqeq.jpg" alt="Ucapan Selamat Ulang Tahun">
-
-    <script>
-        // Fungsi untuk menghentikan animasi ketika tombol ditahan
-        function stopAnimation() {
-            document.getElementById('boy').style.animationPlayState = 'paused';
-            document.getElementById('girl').style.animationPlayState = 'paused';
-        }
-
-        // Fungsi untuk melanjutkan animasi ketika tombol dilepaskan
-        function continueAnimation() {
-            document.getElementById('boy').style.animationPlayState = 'running';
-            document.getElementById('girl').style.animationPlayState = 'running';
-        }
-
-        // Menambahkan event listener untuk menghentikan dan melanjutkan animasi saat tombol ditekan dan dilepaskan
-        document.addEventListener('mousedown', stopAnimation);
-        document.addEventListener('mouseup', continueAnimation);
-    </script>
+    <a href="https://link-video-anda.com" class="button">Tonton Video</a>
 
 </body>
 </html>
